@@ -286,7 +286,13 @@
       z-index: -10;
       position: absolute;
     }
-   
+    /*not considerd as breakpoint*/
+    @media(max-width:1310px){
+      #c1{
+        margin-left: 0;
+      }
+    }
+   /* 1st breakpoint */
     @media(min-width:860px) and  (max-width:1199px) {
       #container{
       width:100%;
@@ -393,6 +399,7 @@
     
    
     }
+    /* 2nd breakpoint */
    @media(max-width: 860px){
 
       .show-btn , .hide-btn{
@@ -547,6 +554,7 @@
 
 
     }
+    /* 3rd breakpoint*/
     @media(max-width:680px){
       #contanier{
         min-width:330px;
@@ -705,11 +713,7 @@
 
 
     }
-    @media(max-width:1310px){
-      #c1{
-        margin-left: 0;
-      }
-    }
+   
     
 
      
