@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prctical-10</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <style>
+        *{
+            padding:0;
+            margin:0;
+    
+        }
+        #header{
+            width:100%;
+            height:70px;
+            background-color:rgb(32, 29, 29);      
+            text-align:center;  
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top:0;
+            padding:0 20px;
+            }
+            #header h1{
+                color:white;
+                line-height: 70px;
+                margin-left:10px;
+            }
+            #container {
+                width:100%;
+                padding:20px;
+            
+                float:right;
+                transition:.7s;
+               
+            }
+            #container img{
+                width:100%;
+                max-width: 700px;
+                display: block;
+                margin: 80px auto 20px auto;
+
+            }
+            #chk{
+                visibility: hidden;
+                position: absolute;
+                z-index: -10;
+            }
+            .show-btn ,.hide-btn{
+                float:left;
+                color:white;
+                position: fixed;
+              font-size: 30px;
+                top:20px;
+                left:30px;
+                z-index: 2;
+
+            }
+            .hide-btn{
+                display: none;
+            }
+            #chk:checked ~ .hide-btn{
+                display:block;
+            }
+            #chk:checked ~ .show-btn{
+                display:none;
+            }
+            #chk:checked ~ #slidebar{
+                left:0;
+                transition:.7s;
+            }
+            #chk:checked ~ #container{
+               width:80%;
+               transition:.7s;
+                float:right;
+              
+            }
+
+
+            p{
+                margin:10px 10px 10px 30px;
+            }
+            #slidebar{
+                width:20%;
+                height: 100%;
+                position: fixed;
+                top:70px;
+                background-color:rgb(32, 29, 29);    
+                left: -20%;
+                transition:.5s;
+            }
+            #slidebar ul{
+                list-style: none;
+            }
+            #slidebar ul li{
+                border-bottom: 2px solid white;
+            }
+            #slidebar ul li a{
+                display:block;
+                color:white;
+                font-size:25px;
+                padding:15px 25px;
+                text-decoration: none;
+                transition:.10s;
+            }
+            #slidebar ul li a i{
+                margin-right:10px;
+            }
+            #slidebar ul li a:hover{
+                border-left:4px solid white;
+            }
+            
+            #si{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                border-bottom:2px solid white;
+                border-top:2px solid white;
+                margin-top: 280px;
+            }
+            #si  a i{
+                font-size:35px;
+                color:white;
+                margin:5px;
+            }
+            @media(max-width: 760px){
+            #chk:checked ~ #slidebar{
+                width:100%;
+                left:0;
+                transition:.7s;
+                text-align:center;
+            }
+            h1{
+                display: none;
+            }
+            }
+
+            
+
+    </style>
+</head>
+<body>
+    <div id = "header">
+        <img src="../image/logop10.jpg" alt="image" style="height:60px; width:60px line-height:70px">
+        <h1>FullStack</h1>
+       
+    </div>
+    <input type = "checkbox" id = "chk">
+    <label for="chk" class="show-btn">
+      <i class="fa fa-bars"></i>
+    </label>
+    <label for="chk" class="hide-btn">
+        <i class="fa fa-times"></i>
+      </label>
+   
+    <div id="container">
+        <img src="../image/Practical8a.jpg" alt="image">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas hic quaerat soluta odio vitae obcaecati alias ab, est possimus id inventore aliquid, quo unde iste? Incidunt debitis officia eligendi deleniti! Labore quibusdam praesentium, adipisci sint asperiores explicabo repellendus totam maiores vel nihil provident earum nostrum pariatur quasi similique reiciendis minus dolorum! Dolorem beatae fuga sit corrupti quia ad minus excepturi eum sequi. Nostrum et laborum, enim hic culpa facere dolore pariatur sit tempora tenetur quod, quo labore vel maxime ea officia sapiente a doloremque, dignissimos eum quam. Provident architecto totam accusantium nam perferendis reprehenderit sequi unde ducimus tempora incidunt possimus ratione delectus atque nesciunt tempore repudiandae a hic obcaecati, voluptate reiciendis quidem labore omnis? Molestiae atque veniam reprehenderit architecto facere incidunt cupiditate, harum, doloremque magni soluta blanditiis a ullam ex ad. Sunt illo expedita aperiam nisi quas exercitationem sapiente, ex dolores? Ipsam dicta nemo quia rem rerum ea, illum nobis aspernatur quos hic tenetur, culpa praesentium molestiae assumenda inventore adipisci explicabo accusamus suscipit eligendi. Perferendis reiciendis officia pariatur vitae! Sed architecto suscipit, quidem eligendi distinctio, excepturi repellendus ab placeat, voluptate repellat necessitatibus ea incidunt quod quos. Laborum id incidunt earum. Nulla aut recusandae sunt officiis officia dicta perspiciatis corporis consectetur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellat, labore nam nobis, veniam molestiae perferendis doloribus architecto commodi iure pariatur? Soluta qui consequuntur molestias delectus consequatur quidem. Amet at explicabo, placeat autem beatae nam nesciunt, recusandae molestias unde iure inventore architecto nostrum nemo quaerat natus ea itaque fugiat voluptates officia aperiam modi ducimus facilis. Officia doloremque deserunt quasi blanditiis a placeat exercitationem, fugiat laborum dolore optio incidunt recusandae eius eveniet sequi, minima officiis sed omnis ex ad modi consequatur corporis itaque, unde quibusdam. Accusamus molestiae, repellat aliquid recusandae fugit soluta, natus quasi saepe blanditiis cum ea iste esse dignissimos magni eos totam ad cupiditate itaque impedit distinctio eum sapiente iusto hic! Nulla, officia eius vel maiores corrupti ea atque eveniet doloremque maxime libero cum cupiditate illum, obcaecati, quidem provident quasi? Modi libero repellendus error quasi cum ipsam maxime, quibusdam eius itaque doloribus delectus quam unde tenetur. Deserunt animi dignissimos beatae? Saepe facere soluta necessitatibus sequi unde, dolorem distinctio aspernatur. Cum labore accusamus debitis reiciendis nobis exercitationem, accusantium, rerum libero recusandae magni, repudiandae omnis magnam dolore eius. Aspernatur enim quam at numquam laborum eaque iste hic, repellat voluptates delectus harum vel, laudantium nostrum expedita quasi molestiae incidunt dolor quos. Earum nemo tenetur error, quo itaque provident veritatis a suscipit dolores accusantium iste voluptatum est recusandae explicabo sit alias eaque aliquid illum ullam ex perferendis, nam laborum. Perspiciatis blanditiis, modi ea libero veritatis architecto sint eligendi, placeat esse est aliquid rem! Minima aspernatur dolorum quisquam ut eveniet sapiente architecto velit nesciunt labore quaerat possimus culpa perspiciatis veniam laboriosam tempora aut cupiditate ex beatae, iste aliquam neque nobis modi. Recusandae iure exercitationem harum quod perspiciatis, sint voluptates consectetur eligendi? Mollitia at sequi totam, laudantium distinctio accusamus cupiditate voluptatibus excepturi culpa unde molestias praesentium quia illum nam, quam tenetur ex facilis sapiente expedita?</p>
+    </div>
+
+    <div id = "slidebar">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
+            <li><a href="#"><i class="fa fa-user"></i><span>About</span></a></li>
+            <li><a href="#"><i class="fa fa-tasks"></i><span>Service</span></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i><span>Blog</span></a></li>
+            <li><a href="#"><i class="fa fa-id-card"></i><span>Contact</span></a></li>
+           
+        </ul>
+        <div id="si">
+            <a href=""><i class="fa fa-facebook-square"></i></a>
+            <a href=""><i class="fa fa-youtube-square"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
