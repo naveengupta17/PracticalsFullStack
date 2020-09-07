@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-11</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        table {
+            border-collapse: collapse;
+            border: 4px solid rgb(79, 79, 252);
+            margin:  100px auto;
+           border-radius: 7px 7px 7px 7px;
+           
+        }
+     
+        tr{
+            border-bottom:3px solid rgb(188, 203, 214);
+            text-align: center;
+            margin:20px;
+            position: relative;
+            height:70px;
+            
+        }
+        caption{
+            background-color:rgb(79, 79, 252);
+            border:4px solid rgb(79, 79, 252);
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding:10px;
+            border-bottom: none;
+            color:white;
+            font-size:20px;
+            
+        }
+        td{
+            padding:15px 30px;
+            position: relative;
+        }
+        i{
+            margin-right: 5px;
+        }
+        thead tr {
+            font-weight: bolder;
+            font-size:20px;
+        }
+        .Status{
+            color:green;
+        }
+        .link i{
+            font-size:18px;
+        }
+        .link #edit:hover{
+            color:blue;
+        }
+        .link #delete:hover{
+            color:red;
+        }
+        .link #edit:hover ~ #e{
+            display:block;
+            background-color: blue;
+            color:white;
+            border-radius: 2px;
+            padding:2px;
+        }
+        .link #delete:hover ~ #d{
+            display:block;
+            background-color: red;
+            border-radius: 2px;
+            color:white;
+            padding:2px;
+        }
+        tbody tr:hover{
+            background-color:rgb(218, 216, 216);
+            
+        }
+        
+        a{
+            text-decoration: none;
+            color:rgb(77, 72, 72);
+        }
+        a:hover{
+            color: indigo;
+        }
+        .pn{
+            width: 600px;
+            text-align: left;
+        }
+        .pl{
+            width:150px;
+            text-align: left;
+        }
+        .Status{
+           width:150px;
+            text-align:left;
+            font-size:22px;
+        }
+       
+        #edit{
+            margin-right:10px;
+        }
+        #uc{
+            color:red;
+
+        }
+        tbody p,a{
+            font-size:22px;
+            
+        }
+        #e, #d{
+            display: none;
+            position: absolute;
+            top:2px;
+            font-size:15px;
+
+        }
+       
+
+    </style>
+</head>
+<body>
+    <table>
+        
+            <Caption>
+               FullStack Live Practical Book
+            </Caption>
+            
+    
+      <thead>
+            <tr>
+                <td>#</td>
+                <td class="pn">Practical Name</td>
+                <td class="pl" style="text-align: left;">Link</td>
+                <td style="text-align: left;">Status</td>
+                <td>Tools</td>
+            </tr>
+        </thead>
+        <tbody>
+           
+            <tr>
+                <td class="sr">1</td>
+                <td class="pn"><P>Create a Web page including HTML basic skeleton using Offline HTML Editor Online Sandbox Enviroment</P></td>
+                <td class="pl"><a href="Practical1.html">Practical-1</a></td>
+                <td class="Status" >Checked</td>
+                <td class="link"><i class="fa fa-pencil" aria-hidden="true" id="edit"></i><i class="fa fa-trash" aria-hidden="true" id="delete"></i><br>
+                <p id="e">EDIT</p><P id="d">DELETE</P></td>
+            </tr>
+            <tr>
+                <td class="sr">2</td>
+                <td class="pn"><P>Live your first Web-Page on Git-Hubt</P></td>
+                <td class="pl"><a href="Practical2.html">Practical-2</a></td>
+                <td class="Status">Checked</td>
+                <td class="link"><i class="fa fa-pencil" aria-hidden="true" id="edit"></i><i class="fa fa-trash" aria-hidden="true" id="delete"></i><br>
+                <p id="e">EDIT</p><P id="d">DELETE</P></td>
+            </tr>
+            <tr>
+                <td class="sr">3</td>
+                <td class="pn"><P>Create a web page showing a basic html structure using character Entities and span tag</P></td>
+                <td class="pl"><a href="Practical3.html">Practical-3</a></td>
+                <td class="Status">Checked</td>
+                <td class="link"><i class="fa fa-pencil" aria-hidden="true" id="edit"></i><i class="fa fa-trash" aria-hidden="true" id="delete"></i><br>
+                <p id="e">EDIT</p><P id="d">DELETE</P></td>
+            </tr>
+            <tr>
+                <td class="sr">4</td>
+                <td class="pn"><P>Create a Website having list of all practical and their individual practical Page links</P></td>
+                <td class="pl"><a href="Practical4.html">Practical-4</a></td>
+                <td class="Status">Checked</td>
+                <td class="link"><i class="fa fa-pencil" aria-hidden="true" id="edit"></i><i class="fa fa-trash" aria-hidden="true" id="delete"></i><br>
+                <p id="e">EDIT</p><P id="d">DELETE</P></td>
+            </tr>
+            <tr>
+                <td class="sr">5</td>
+                <td class="pn"><P>Create a Web-Page showing the use of Image-Map in the Web Application.</P></td>
+                <td class="pl"><a href="Practical5.html">Practical-5</a></td>
+                <td class="Status">Checked</td>
+                <td class="link"><i class="fa fa-pencil" aria-hidden="true" id="edit"></i><i class="fa fa-trash" aria-hidden="true" id="delete"></i><br>
+                <p id="e">EDIT</p><P id="d">DELETE</P></td>
+            </tr>
+            <tr>
+                <td class="sr">6</td>
+                <td class="pn"><P>Create the following layout using CSS properties.</P></td>
+                <td class="pl"><a href="Practical6.html">Practical-6</a></td>
+                <td class="Status">Checked</td>
+                <td class="link"><i class="fa fa-pencil" aria-hidden="true" id="edit"></i><i class="fa fa-trash" aria-hidden="true" id="delete"></i><br>
+                <p id="e">EDIT</p><P id="d">DELETE</P></td>
+            </tr>
+            <tr>
+                <td class="sr">7</td>
+                <td class="pn"><P>Create a web page layout using div tags</P></td>
+                <td class="pl"><a href="Practical7.html">Practical-7</a></td>
+                <td class="Status">Checked</td>
+                <td class="link"><i class="fa fa-pencil" aria-hidden="true" id="edit"></i><i class="fa fa-trash" aria-hidden="true" id="delete"></i><br>
+                <p id="e">EDIT</p><P id="d">DELETE</P></td>
+            </tr>
+            <tr>
+                <td class="sr">8</td>
+                <td class="pn"><P>Create a   web page layout and add content using div tags.</P></td>
+                <td class="pl"><a href="Practical8.html">Practical-8</a></td>
+                <td class="Status">Checked</td>
+                <td class="link"><i class="fa fa-pencil" aria-hidden="true" id="edit"></i><i class="fa fa-trash" aria-hidden="true" id="delete"></i><br>
+                <p id="e">EDIT</p><P id="d">DELETE</P></td>
+            </tr>
+            <tr>
+                <td class="sr">9</td>
+                <td class="pn"><P>Create a  responsive web page layout.</P></td>
+                <td class="pl"><a href="Practical9.html">Practical-9</a></td>
+                <td class="Status">Checked</td>
+                <td class="link"><i class="fa fa-pencil" aria-hidden="true" id="edit"></i><i class="fa fa-trash" aria-hidden="true" id="delete"></i><br>
+                <p id="e">EDIT</p><P id="d">DELETE</P></td>
+            </tr>
+            <tr>
+                <td class="sr">10</td>
+                <td class="pn"><P> responsive Side-bar Navigation menu as per the layout. </P></td>
+                <td class="pl"><a href="Practical10.html">Practical-10</a></td>
+                <td class="Status" id="uc">Un-Checked</td>
+                <td class="link"><i class="fa fa-pencil" aria-hidden="true" id="edit"></i><i class="fa fa-trash" aria-hidden="true" id="delete"></i><br>
+                <p id="e">EDIT</p><P id="d">DELETE</P></td>
+            </tr>
+            <tr>
+                <td class="sr">11</td>
+                <td class="pn"><P>create a table and add records of practicals conducted as attached screenshot</P></td>
+                <td class="pl"><a href="Practical11.html">Practical-11</a></td>
+                <td class="Status" id="uc">Un-Checked</td>
+                <td class="link"><i class="fa fa-pencil" aria-hidden="true" id="edit"></i><i class="fa fa-trash" aria-hidden="true" id="delete"></i><br>
+                <p id="e">EDIT</p><P id="d">DELETE</P></td>
+            </tr>
+            <tr>
+                <td class="sr">12</td>
+                <td class="pn"><P> create a custom table as attached screenshot. </P></td>
+                <td class="pl"><a href="Practical12.html">Practical-12</a></td>
+                <td class="Status" id="uc">Un-Checked</td>
+                <td class="link"><i class="fa fa-pencil" aria-hidden="true" id="edit"></i><i class="fa fa-trash" aria-hidden="true" id="delete"></i><br>
+                <p id="e">EDIT</p><P id="d">DELETE</P></td>
+            </tr>
+            
+
+        </tbody>
+
+
+       
+    </table>
+    
+</body>
+</html>
